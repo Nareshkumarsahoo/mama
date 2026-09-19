@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hey Mama ❤️ | A Romantic Surprise</title>
+  
+  <!-- SEO & Social Sharing Meta Tags -->
+  <meta name="description" content="A special romantic interactive questionnaire made with love for Mama ❤️">
+  <meta name="theme-color" content="#1a002c">
+  
+  <!-- Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <script type="module" crossorigin src="/assets/index-9L_DYHYf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B0l1_r3k.css">
+</head>
+<body>
+
+  <!-- Floating Background Particle Canvas -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-glow orb-1"></div>
+  <div class="bg-glow orb-2"></div>
+  <div class="bg-glow orb-3"></div>
+
+  <!-- Music Control Header -->
+  <header class="top-header">
+    <button id="musicToggleBtn" class="music-btn" aria-label="Toggle Romantic Music">
+      <span class="music-icon">🎵</span>
+      <span class="music-text">Play Romantic Music 💕</span>
+      <div class="equalizer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </button>
+  </header>
+
+  <!-- Audio Element with Fallback Support -->
+  <audio id="bgAudio" loop preload="auto"></audio>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    <div id="cardWrapper" class="glass-card">
+      
+      <!-- Content View Container dynamically rendered by script.js -->
+      <div id="cardContent" class="card-content">
+        <!-- Default loader state before JS init -->
+        <div class="loading-spinner">
+          <div class="pulse-heart">❤️</div>
+          <p>Loading Love Notes...</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Cute Interactive Response Modal Overlay -->
+  <div id="responseModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card glass-modal">
+      <div class="modal-header">
+        <span id="modalEmoji" class="modal-emoji">🥰</span>
+      </div>
+      <h3 id="modalTitle" class="modal-title">Yay! ❤️</h3>
+      <p id="modalMessage" class="modal-message">You just made my heart melt!</p>
+      
+      <div id="modalButtons" class="modal-actions">
+        <button id="modalActionBtn" class="btn btn-primary shimmer-btn">
+          <span>Continue 💖</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subtle Footer -->
+  <footer class="romantic-footer">
+    <p id="footerMessage">Made with ❤️ for Mama</p>
+  </footer>
+
+  <!-- Main Application Script -->
+</body>
+</html>
